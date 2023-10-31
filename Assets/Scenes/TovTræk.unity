@@ -11541,6 +11541,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 124
       objectReference: {fileID: 0}
+    - target: {fileID: 5642687493467663221, guid: bd40ad692d386e04d934363e9f4ecf55,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 656589902150197524, guid: bd40ad692d386e04d934363e9f4ecf55, type: 3}
     - {fileID: 5396721370219286418, guid: bd40ad692d386e04d934363e9f4ecf55, type: 3}
@@ -11585,7 +11590,7 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LinearLimit:
-    limit: 300
+    limit: 150
     bounciness: 0
     contactDistance: 0
   m_AngularXLimitSpring:
