@@ -14,10 +14,11 @@ public class SliceObject : MonoBehaviour
 
     public Material sliceMaterial;
     public float sliceForce = 2000f;
+    public float despawnTimer = 10f;
 
     void FixedUpdate()
     {
-        bool sliceHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceLayer);
+        bool sliceHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceableLayer);
 
         if (sliceHit)
         {
@@ -43,6 +44,8 @@ public class SliceObject : MonoBehaviour
             SliceComponent(lowerHull);
 
             Destroy(target);
+            Destroy(upperHull, despawnTimer);
+            Destroy(lowerHull, despawnTimer);
         }
     }
 
