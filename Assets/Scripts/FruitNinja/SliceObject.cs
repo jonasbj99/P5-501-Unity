@@ -13,7 +13,7 @@ public class SliceObject : MonoBehaviour
     public LayerMask sliceableLayer;
 
     public Material sliceMaterial;
-    public float sliceForce = 2000f;
+    public float sliceForce = 50f;
     public float despawnTimer = 10f;
 
     void FixedUpdate()
