@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Axe
   - SliceObject
+  - Ice
   layers:
   - Default
   - TransparentFX

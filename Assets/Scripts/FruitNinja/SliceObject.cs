@@ -14,7 +14,7 @@ public class SliceObject : MonoBehaviour
 
     public Material sliceMaterial;
     public float sliceForce = 50f;
-    public float despawnTimer = 10f;
+    public float despawnTimer = 3f;
 
     void FixedUpdate()
     {
@@ -42,6 +42,8 @@ public class SliceObject : MonoBehaviour
 
             GameObject lowerHull = hull.CreateLowerHull(target, sliceMaterial);
             SliceComponent(lowerHull);
+
+            SliceGameBehavior.sliceScore += 1;
 
             Destroy(target);
             Destroy(upperHull, despawnTimer);

@@ -11,6 +11,8 @@ public class SliceGameBehavior : MonoBehaviour
     public GameObject[] sliceObjects;
     int objectCount;
 
+    static public int sliceScore;
+
     private void Awake() // Debug Use
     {
         debugControls = new XRIDefaultInputActions();
@@ -23,8 +25,16 @@ public class SliceGameBehavior : MonoBehaviour
     {
         debugControls.Disable();
     }
+
+    private void Start()
+    {
+        sliceScore = 0;
+    }
+
     private void Update()
     {
+        Debug.Log(sliceScore);
+
         objectCount = GameObject.FindGameObjectsWithTag("SliceObject").Length;
         debugControls.Debug.SpawnObject.ReadValue<float>(); // Debug Use
 
