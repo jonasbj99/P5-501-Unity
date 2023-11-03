@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class TovPosition : MonoBehaviour
 {
-    public GameObject Tov;
-    private float YPos = 1;
+    private Vector3 pos;
     // Start is called before the first frame update
     void Start()
     {
-        
+        pos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(transform.position.y > pos.y)
+        {
+            transform.position = pos;
+        }
     }
 }

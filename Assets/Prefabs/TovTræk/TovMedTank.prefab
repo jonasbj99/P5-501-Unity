@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 5642687493467663221}
   - component: {fileID: 959787488993026186}
   - component: {fileID: 1866170378562363803}
+  - component: {fileID: 3898695029732592747}
   m_Layer: 0
   m_Name: TovMedTank
   m_TagString: Untagged
@@ -943,6 +944,18 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &3898695029732592747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449040480732717713}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f297fead5e492041aca1486882d92f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2784635940495691715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,8 +2142,45 @@ PrefabInstance:
     - {fileID: 1201910526569117447, guid: 63d1b3305e20bbe4a8b3bf1ad5958435, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 689109488175583794, guid: 63d1b3305e20bbe4a8b3bf1ad5958435,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3726895860700980452}
   m_SourcePrefab: {fileID: 100100000, guid: 63d1b3305e20bbe4a8b3bf1ad5958435, type: 3}
+--- !u!1 &1162653443710485537 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 689109488175583794, guid: 63d1b3305e20bbe4a8b3bf1ad5958435,
+    type: 3}
+  m_PrefabInstance: {fileID: 1851725225158317587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &3726895860700980452
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162653443710485537}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 124
+  m_CollisionDetection: 0
 --- !u!4 &4788605568404334917 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6613022772945993558, guid: 63d1b3305e20bbe4a8b3bf1ad5958435,
