@@ -1036,55 +1036,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 949028310278111, guid: bd40ad692d386e04d934363e9f4ecf55, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 50763773026599600, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 767240747753630046, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 959787488993026186, guid: bd40ad692d386e04d934363e9f4ecf55,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1871006418}
-    - target: {fileID: 1489408618608293141, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1872653539731211097, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1936496489752890694, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2030107217611188654, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2034662155836301468, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2173049506727758879, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 30.23076
-      objectReference: {fileID: 0}
     - target: {fileID: 2173049506727758879, guid: bd40ad692d386e04d934363e9f4ecf55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1135,125 +1091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 2360426119242481002, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2449040480732717713, guid: bd40ad692d386e04d934363e9f4ecf55,
         type: 3}
       propertyPath: m_Name
       value: TovMedTank
-      objectReference: {fileID: 0}
-    - target: {fileID: 2784635940495691715, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 3903215299970421257, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4249277589410292817, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4277590651807559797, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4313094360035847105, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4512456959318085627, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4512456959318085627, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4941315030292368832, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 4980702891103625874, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5109249956489910258, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5277393535132449242, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5392588392599291575, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5950237699918816085, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6563342642854075145, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6789066959012316510, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6943694115914771822, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6959614165623041630, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6987277043278282603, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238017549761970357, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7609888548680332639, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8043444147725420268, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_TagString
-      value: "TovTr\xE6kPointCounter"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8962175865813849299, guid: bd40ad692d386e04d934363e9f4ecf55,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
