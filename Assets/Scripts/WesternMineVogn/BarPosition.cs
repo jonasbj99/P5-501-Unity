@@ -7,8 +7,10 @@ public class BarPosition : MonoBehaviour
     public GameObject AttachPole;
     private Vector3 pos;
     private Vector3 offset;
-    public Vector3 initialOffset = new Vector3(0, -0.1f, 0.7f);
+    private Vector3 initialOffset = new Vector3(0, -0.1f, 0.7f);
     private float originalY;
+    private Vector3 originalPosition;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,7 @@ public class BarPosition : MonoBehaviour
             transform.position = pos + offset;
         }*/
 
-
+        /*
         // Offset is added to the z-axis only
         Vector3 offset = new Vector3(0, -0.1f, 0.7f);
 
@@ -47,6 +49,13 @@ public class BarPosition : MonoBehaviour
             // Update the position only on the z-axis
             transform.position = new Vector3(transform.position.x, originalY, pos.z) + offset;
         }
+        */
+
+         // Get the position of the AttachPole
+        Vector3 pos = AttachPole.transform.position;
+
+        // Update the x and y positions, keep z fixed
+        transform.position = new Vector3(pos.x + initialOffset.x, pos.y + initialOffset.y, originalPosition.z);
 
     }
 }
