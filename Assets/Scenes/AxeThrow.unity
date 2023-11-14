@@ -37384,6 +37384,9 @@ MonoBehaviour:
     type: 3}
   axeSpawn1: {fileID: 233232223}
   axeSpawn2: {fileID: 1060711284}
+  scoreText: {fileID: 2144325789}
+  streakText: {fileID: 1187043580}
+  timeText: {fileID: 1662424014}
 --- !u!1001 &1614566895
 PrefabInstance:
   m_ObjectHideFlags: 0

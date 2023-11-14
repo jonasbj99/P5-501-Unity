@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AxeGameBehavior : MonoBehaviour
 {
@@ -19,9 +20,15 @@ public class AxeGameBehavior : MonoBehaviour
     float spawnY;
     float spawnZ;
 
-    public static int axeScore;
-    //Public text field for in game score
+    [SerializeField] TMP_Text scoreText;
+    [SerializeField] TMP_Text streakText;
+    [SerializeField] TMP_Text timeText;
 
+    public static int axeScore;
+    public static int streakScore;
+    public static int timeLeft;
+
+    string test = "TEST TEST TEST";
 
     void Start()
     {
@@ -35,6 +42,10 @@ public class AxeGameBehavior : MonoBehaviour
     void Update()
     {
         Debug.Log(axeScore);
+
+        //scoreText.text = test;
+        //streakText.text = "" + streakScore;
+        //timeText.text = "" + timeLeft;
 
         if (Input.GetKeyDown("space"))
         {
