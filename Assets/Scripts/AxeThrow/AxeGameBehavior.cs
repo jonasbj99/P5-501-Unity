@@ -24,16 +24,11 @@ public class AxeGameBehavior : MonoBehaviour
     [SerializeField] TMP_Text streakText;
     [SerializeField] TMP_Text timeText;
 
-    public static int axeScore;
-    public static int streakScore;
-    public static int timeLeft;
-
-    string test = "TEST TEST TEST";
+    public static int axeScore = 0;
+    public static float currentTime = 5f;
 
     void Start()
     {
-        axeScore = 0;
-
         spawnX = spawnArea.transform.localScale.x / 2;
         spawnY = spawnArea.transform.localScale.y / 2;
         spawnZ = spawnArea.transform.localScale.z / 2;
@@ -43,9 +38,38 @@ public class AxeGameBehavior : MonoBehaviour
     {
         Debug.Log(axeScore);
 
-        //scoreText.text = test;
-        //streakText.text = "" + streakScore;
-        //timeText.text = "" + timeLeft;
+        targetCount = FindObjectsOfType<AxeTargetBehavior>().Length;
+
+        axeCount1 = FindObjectsOfType<AxeBehavior1>().Length;
+
+        axeCount2 = FindObjectsOfType<AxeBehavior2>().Length;
+
+        if (currentTime > 0)
+        {
+            currentTime -= Time.deltaTime;
+
+            if (targetCount < 1)
+            {
+                SpawnTarget();
+            }
+
+            if (axeCount1 < 1)
+            {
+                SpawnAxe(throwingAxe1, axeSpawn1);
+            }
+
+            if (axeCount2 < 1)
+            {
+                SpawnAxe(throwingAxe2, axeSpawn2);
+            }
+        }
+        else
+        {
+            currentTime = 0;
+        }
+
+        scoreText.text = "Score: " + axeScore;
+        timeText.text = "Time: " + currentTime.ToString("0");
 
         if (Input.GetKeyDown("space"))
         {
@@ -58,27 +82,6 @@ public class AxeGameBehavior : MonoBehaviour
         }
 
         if (Input.GetKeyDown("2"))
-        {
-            SpawnAxe(throwingAxe2, axeSpawn2);
-        }
-
-        targetCount = FindObjectsOfType<AxeTargetBehavior>().Length;
-
-        axeCount1 = FindObjectsOfType<AxeBehavior1>().Length;
-
-        axeCount2 = FindObjectsOfType<AxeBehavior2>().Length;
-
-        if(targetCount < 1)
-        {
-            SpawnTarget();
-        }
-
-        if(axeCount1 < 1)
-        {
-            SpawnAxe(throwingAxe1, axeSpawn1);
-        }
-
-        if (axeCount2 < 1)
         {
             SpawnAxe(throwingAxe2, axeSpawn2);
         }

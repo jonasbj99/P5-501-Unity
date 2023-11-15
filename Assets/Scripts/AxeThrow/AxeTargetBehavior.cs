@@ -8,7 +8,10 @@ public class AxeTargetBehavior : MonoBehaviour
     {
         if(collision.gameObject.tag == "Axe")
         {
-            AxeGameBehavior.axeScore += 1;
+            if(AxeGameBehavior.currentTime > 0)
+            {
+                AxeGameBehavior.axeScore += 1;
+            }
             Destroy(this.gameObject);
         }
     }
