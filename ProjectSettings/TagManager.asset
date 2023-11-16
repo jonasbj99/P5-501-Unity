@@ -8,6 +8,7 @@ TagManager:
   - SliceObject
   - Ice
   - "TovTr\xE6kPointCounter"
+  - Floor
   layers:
   - Default
   - TransparentFX

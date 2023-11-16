@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.InputSystem; // Debug Use
 
 public class SliceGameBehavior : MonoBehaviour
@@ -11,8 +12,10 @@ public class SliceGameBehavior : MonoBehaviour
     public GameObject[] sliceObjects;
     int objectCount;
 
+    [SerializeField] TMP_Text scoreText;
     static public int sliceScore;
 
+    
     private void Awake() // Debug Use
     {
         debugControls = new XRIDefaultInputActions();
@@ -25,6 +28,7 @@ public class SliceGameBehavior : MonoBehaviour
     {
         debugControls.Disable();
     }
+    
 
     private void Start()
     {
@@ -35,10 +39,18 @@ public class SliceGameBehavior : MonoBehaviour
     {
         Debug.Log(sliceScore);
 
+        scoreText.text = "Score: " + sliceScore;
+
         objectCount = GameObject.FindGameObjectsWithTag("SliceObject").Length;
+        
         debugControls.Debug.SpawnObject.ReadValue<float>(); // Debug Use
 
         if (debugControls.Debug.SpawnObject.ReadValue<float>() > 0 && objectCount < 1) // Debug Use
+        {
+            SpawnObject();
+        }
+
+        if (Input.GetKeyDown("space"))
         {
             SpawnObject();
         }

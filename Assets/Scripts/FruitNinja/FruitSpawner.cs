@@ -10,16 +10,16 @@ public class FruitSpawner : MonoBehaviour
 
     [SerializeField] GameObject[] fruitPrefabs;
 
-    [SerializeField] float startDelay = 2f;
+    [SerializeField] float startDelay = 5f;
 
-    [SerializeField] float minSpawnDelay = 0.5f;
+    [SerializeField] float minSpawnDelay = 0.75f;
     [SerializeField] float maxSpawnDelay = 2f;
 
     [SerializeField] float minAngle = -15f;
     [SerializeField] float maxAngle = 15f;
 
-    [SerializeField] float minForce = -18f;
-    [SerializeField] float maxForce = 22f;
+    [SerializeField] float minForce = 4f;
+    [SerializeField] float maxForce = 7f;
 
     [SerializeField] float maxLifetime = 5f;
 
