@@ -11,6 +11,12 @@ public class IceClimbBehavior : MonoBehaviour
     bool climbFinish;
     bool climbStart;
 
+    void Start()
+    {
+        //climbStart = false;
+        //climbFinish = false;
+    }
+
     void Update()
     {
         if (climbStart == true && climbFinish == false)
@@ -23,6 +29,8 @@ public class IceClimbBehavior : MonoBehaviour
             signObject.gameObject.SetActive(true);
             climbStart = false;
         }
+
+        Debug.Log(climbTime);
     }
 
     public void ClimbStart()
