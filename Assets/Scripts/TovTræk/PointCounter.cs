@@ -5,16 +5,22 @@ using TMPro;
 
 public class PointCounter : MonoBehaviour
 {
-    private int score = 0;
+    public static int score = 0;
 
+    public static bool startTimer = false;
     public static float currentTime = 10f;
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text timeText;
 
+    void start()
+    {
+        startTimer = false;
+    }
+
 
     void Update()
     {
-        if(currentTime > 0)
+        if(startTimer = true && currentTime > 0)
         {
             currentTime -= Time.deltaTime;
         }
