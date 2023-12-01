@@ -11,12 +11,6 @@ public class IceClimbBehavior : MonoBehaviour
     bool climbFinish;
     bool climbStart;
 
-    void Start()
-    {
-        //climbStart = false;
-        //climbFinish = false;
-    }
-
     void Update()
     {
         if (climbStart == true && climbFinish == false)
