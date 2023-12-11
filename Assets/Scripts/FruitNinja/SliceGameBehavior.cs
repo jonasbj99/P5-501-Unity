@@ -6,16 +6,21 @@ using UnityEngine.InputSystem; // Debug Use
 
 public class SliceGameBehavior : MonoBehaviour
 {
-    XRIDefaultInputActions debugControls; // Debug Use
+    //XRIDefaultInputActions debugControls; // Debug Use
 
     public Transform[] spawnPositions;
     public GameObject[] sliceObjects;
     int objectCount;
 
     [SerializeField] TMP_Text scoreText;
-    static public int sliceScore;
+    public static int sliceScore;
 
-    
+    [SerializeField] TMP_Text timeText;
+    float currentTime = 300f;
+
+    [SerializeField] GameObject[] spawners;
+
+    /*
     private void Awake() // Debug Use
     {
         debugControls = new XRIDefaultInputActions();
@@ -28,7 +33,7 @@ public class SliceGameBehavior : MonoBehaviour
     {
         debugControls.Disable();
     }
-    
+    */
 
     private void Start()
     {
@@ -39,21 +44,37 @@ public class SliceGameBehavior : MonoBehaviour
     {
         Debug.Log(sliceScore);
 
+        currentTime -= Time.deltaTime;
+
         scoreText.text = "Score: " + sliceScore;
+
+        timeText.text = "Time: " + currentTime.ToString("0");
+
+        if (currentTime <= 0)
+        {
+            currentTime = 0;
+            for(int i = 0; i < spawners.Length; i++)
+            {
+                Destroy(spawners[i]);
+            }
+        }
 
         objectCount = GameObject.FindGameObjectsWithTag("SliceObject").Length;
         
-        debugControls.Debug.SpawnObject.ReadValue<float>(); // Debug Use
+        //debugControls.Debug.SpawnObject.ReadValue<float>(); // Debug Use
 
+        /*
         if (debugControls.Debug.SpawnObject.ReadValue<float>() > 0 && objectCount < 1) // Debug Use
         {
             SpawnObject();
         }
 
+        
         if (Input.GetKeyDown("space"))
         {
             SpawnObject();
         }
+        */
     }
 
     void SpawnObject()
