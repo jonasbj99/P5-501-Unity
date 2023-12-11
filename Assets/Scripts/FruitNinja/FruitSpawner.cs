@@ -16,8 +16,10 @@ public class FruitSpawner : MonoBehaviour
     [SerializeField] float minSpawnDelay = 0.75f;
     [SerializeField] float maxSpawnDelay = 2f;
 
-    [SerializeField] float minAngle = -15f;
-    [SerializeField] float maxAngle = 15f;
+    [SerializeField] float minXAngle = 6f;
+    [SerializeField] float maxXAngle = 12f;
+    [SerializeField] float minZAngle = 6f;
+    [SerializeField] float maxZAngle = 12f;
 
     [SerializeField] float minForce = 4f;
     [SerializeField] float maxForce = 7f;
@@ -52,7 +54,7 @@ public class FruitSpawner : MonoBehaviour
             position.y = Random.Range(spawnArea.bounds.min.y, spawnArea.bounds.max.y);
             position.z = Random.Range(spawnArea.bounds.min.z, spawnArea.bounds.max.z);
 
-            Quaternion rotation = Quaternion.Euler(0f, 0f, Random.Range(minAngle, maxAngle));
+            Quaternion rotation = Quaternion.Euler(Random.Range(minXAngle, maxXAngle), 0f, Random.Range(minZAngle, maxZAngle));
 
             GameObject fruit = Instantiate(prefab, position, rotation);
             Destroy(fruit, maxLifetime);
