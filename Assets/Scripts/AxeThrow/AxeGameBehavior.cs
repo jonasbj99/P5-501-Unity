@@ -21,11 +21,10 @@ public class AxeGameBehavior : MonoBehaviour
     float spawnZ;
 
     [SerializeField] TMP_Text scoreText;
-    [SerializeField] TMP_Text streakText;
     [SerializeField] TMP_Text timeText;
 
     public static int axeScore = 0;
-    public static float currentTime = 5f;
+    public static float currentTime = 300f;
 
     void Start()
     {

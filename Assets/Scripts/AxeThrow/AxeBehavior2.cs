@@ -8,7 +8,7 @@ public class AxeBehavior2 : MonoBehaviour
     {
         if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Axe")
         {
-            Destroy(this.gameObject, 2f);
+            Destroy(this.gameObject, 0.75f);
         }
     }
 }
