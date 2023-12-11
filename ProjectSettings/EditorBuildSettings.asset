@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 06b9251ee6b6fe041b67df78cbb81236
+  - enabled: 1
+    path: Assets/Scenes/AxeThrow.unity
+    guid: ce0ec2e29824d264da8500344e1b48b2
+  - enabled: 1
+    path: "Assets/Scenes/TovTr\xE6k.unity"
+    guid: 4a12c7119e4876f40a4d2e9790e8d3e4
+  - enabled: 1
+    path: Assets/Scenes/IceClimb.unity
+    guid: 4e8c5ff698f539c428a312980ec8b74b
+  - enabled: 1
+    path: Assets/Scenes/FruitNinja.unity
+    guid: 795faecb959d11b419d89436e8d53ef4
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 74d2916843f584b44981ce208cfe1cbb,
       type: 2}
