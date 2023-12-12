@@ -47,6 +47,8 @@ public class SliceObject : MonoBehaviour
 
             SliceGameBehavior.sliceScore += 1;
 
+            swordAudio.Play();
+
             Destroy(target);
             Destroy(upperHull, despawnTimer);
             Destroy(lowerHull, despawnTimer);
