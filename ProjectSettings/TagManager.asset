@@ -9,6 +9,7 @@ TagManager:
   - Ice
   - "TovTr\xE6kPointCounter"
   - Floor
+  - Target
   layers:
   - Default
   - TransparentFX
