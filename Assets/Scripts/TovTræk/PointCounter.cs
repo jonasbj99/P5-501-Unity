@@ -12,6 +12,10 @@ public class PointCounter : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text timeText;
 
+    [SerializeField] AudioSource fanfare;
+
+    bool gameEnded = false;
+
     void start()
     {
         startTimer = false;
@@ -32,10 +36,18 @@ public class PointCounter : MonoBehaviour
         scoreText.text = "Score: " + score;
         timeText.text = "Time: " + currentTime.ToString("0");
 
-        if(score > 99)
+        if(score > 99 && gameEnded == false)
         {
-            Debug.Log("You Win!");
+            GameOver();
         }
+    }
+
+    private void GameOver()
+    {
+        gameEnded = true;
+        Debug.Log("You Win!");
+
+        fanfare.Play();
     }
     
     private void OnTriggerEnter (Collider other)

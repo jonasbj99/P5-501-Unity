@@ -28,4 +28,12 @@ public class RopeSounds : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter(Collision collision) 
+    {
+        if(collision.gameObject.tag == "Hand")
+        {
+            grabSource.Play();
+        }
+    }
 }

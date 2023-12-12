@@ -10,6 +10,7 @@ TagManager:
   - "TovTr\xE6kPointCounter"
   - Floor
   - Target
+  - Hand
   layers:
   - Default
   - TransparentFX
