@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     public void AxeThrowButton()
     {
         SceneManager.LoadScene("AxeThrow");
