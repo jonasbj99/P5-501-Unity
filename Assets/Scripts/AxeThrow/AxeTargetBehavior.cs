@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class AxeTargetBehavior : MonoBehaviour
 {
+    private AudioSource axeHit;
+
+    private void start()
+    {
+        axeHit = GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Axe")
@@ -12,6 +19,8 @@ public class AxeTargetBehavior : MonoBehaviour
             {
                 AxeGameBehavior.axeScore += 1;
             }
+
+            axeHit.Play();
             Destroy(this.gameObject);
         }
     }
