@@ -16,6 +16,8 @@ public class SliceObject : MonoBehaviour
     public float sliceForce = 50f;
     public float despawnTimer = 3f;
 
+    [SerializeField] AudioSource swordAudio;
+
     void FixedUpdate()
     {
         bool sliceHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceableLayer);

@@ -6,14 +6,14 @@ public class AxeBehavior1 : MonoBehaviour
 {
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Target")
-        {
-            this.gameObject.GetComponent<AudioSource>().Play();
-        }
-
         if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Axe")
         {
             Destroy(this.gameObject, 0.75f);
+
+            if (collision.gameObject.tag == "Target")
+            {
+                this.gameObject.GetComponent<AudioSource>().Play();
+            }
         }
     }
 }
