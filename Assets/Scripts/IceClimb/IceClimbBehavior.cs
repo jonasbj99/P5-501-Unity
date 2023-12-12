@@ -11,6 +11,13 @@ public class IceClimbBehavior : MonoBehaviour
     bool climbFinish;
     bool climbStart;
 
+    public AudioSource climbOver;
+
+    private void Start()
+    {
+        climbOver = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (climbStart == true && climbFinish == false)
@@ -22,6 +29,7 @@ public class IceClimbBehavior : MonoBehaviour
             climbTimeText.text = "Time: " + climbTime.ToString("0.00");
             signObject.gameObject.SetActive(true);
             climbStart = false;
+            climbOver.Play();
         }
 
         Debug.Log(climbTime);
