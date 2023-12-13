@@ -8,7 +8,7 @@ public class PointCounter : MonoBehaviour
     public static int score = 0;
 
     public static bool startTimer = false;
-    public static float currentTime = 60f;
+    public static float currentTime = 300f;
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text timeText;
 
