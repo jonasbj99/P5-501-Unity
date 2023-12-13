@@ -24,7 +24,7 @@ public class AxeGameBehavior : MonoBehaviour
     [SerializeField] TMP_Text timeText;
 
     public static int axeScore = 0;
-    public static float currentTime = 300f;
+    public static float currentTime = 180f;
 
     void Start()
     {

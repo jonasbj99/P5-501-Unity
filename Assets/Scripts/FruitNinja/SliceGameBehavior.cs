@@ -16,7 +16,7 @@ public class SliceGameBehavior : MonoBehaviour
     public static int sliceScore;
 
     [SerializeField] TMP_Text timeText;
-    float currentTime = 300f;
+    float currentTime = 180f;
 
     [SerializeField] GameObject[] spawners;
 
