@@ -12388,7 +12388,7 @@ GameObject:
   - component: {fileID: 1203888150}
   - component: {fileID: 1203888149}
   m_Layer: 0
-  m_Name: XR Origin (XR Rig) (1)
+  m_Name: AV Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18939,7 +18939,7 @@ GameObject:
   - component: {fileID: 1738874919}
   - component: {fileID: 1738874918}
   m_Layer: 0
-  m_Name: Floor (1)
+  m_Name: AV Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
