@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/AxeThrow.unity
     guid: ce0ec2e29824d264da8500344e1b48b2
   - enabled: 1
-    path: "Assets/Scenes/TovTr\xE6k.unity"
+    path: Assets/Scenes/TugTheTank.unity
     guid: 4a12c7119e4876f40a4d2e9790e8d3e4
   - enabled: 1
     path: Assets/Scenes/IceClimb.unity
     guid: 4e8c5ff698f539c428a312980ec8b74b
   - enabled: 1
-    path: Assets/Scenes/FruitNinja.unity
+    path: Assets/Scenes/VeggieSamurai.unity
     guid: 795faecb959d11b419d89436e8d53ef4
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 74d2916843f584b44981ce208cfe1cbb,

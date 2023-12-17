@@ -28,8 +28,8 @@ public class IceClimbBehavior : MonoBehaviour
         {
             climbTimeText.text = "Time: " + climbTime.ToString("0.00");
             signObject.gameObject.SetActive(true);
-            climbStart = false;
             climbOver.Play();
+            climbStart = false;
         }
 
         Debug.Log(climbTime);
