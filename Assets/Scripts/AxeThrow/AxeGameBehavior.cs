@@ -35,7 +35,7 @@ public class AxeGameBehavior : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(axeScore);
+        //Debug.Log(axeScore);
 
         targetCount = FindObjectsOfType<AxeTargetBehavior>().Length;
 
@@ -70,6 +70,7 @@ public class AxeGameBehavior : MonoBehaviour
         scoreText.text = "Score: " + axeScore;
         timeText.text = "Time: " + currentTime.ToString("0");
 
+        /*
         if (Input.GetKeyDown("space"))
         {
             SpawnTarget();
@@ -84,11 +85,13 @@ public class AxeGameBehavior : MonoBehaviour
         {
             SpawnAxe(throwingAxe2, axeSpawn2);
         }
+        */
     }
 
     void SpawnTarget()
     {
-        Vector3 randomSpawnPos = spawnArea.transform.position + new Vector3(Random.Range(-spawnX, spawnX), Random.Range(-spawnY, spawnY), Random.Range(-spawnZ, spawnZ));
+        Vector3 randomSpawnPos = spawnArea.transform.position +
+            new Vector3(Random.Range(-spawnX, spawnX), Random.Range(-spawnY, spawnY), Random.Range(-spawnZ, spawnZ));
         Instantiate(targetObject[Random.Range(0, targetObject.Length)], randomSpawnPos, spawnArea.transform.rotation);
     }
 

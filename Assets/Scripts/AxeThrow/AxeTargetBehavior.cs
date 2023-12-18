@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AxeTargetBehavior : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Axe")
         {
@@ -16,3 +16,4 @@ public class AxeTargetBehavior : MonoBehaviour
         }
     }
 }
+ 

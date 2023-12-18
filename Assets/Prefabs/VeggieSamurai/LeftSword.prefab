@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3732504115824049418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.0019999, z: 0}
+  m_LocalPosition: {x: 0, y: 1.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -208,3 +208,4 @@ MonoBehaviour:
   sliceMaterial: {fileID: 2100000, guid: c48ed0c67054fc24da0ac1cced5a308c, type: 2}
   sliceForce: 2000
   despawnTimer: 10
+  swordAudio: {fileID: 0}

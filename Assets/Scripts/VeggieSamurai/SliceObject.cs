@@ -18,7 +18,7 @@ public class SliceObject : MonoBehaviour
 
     [SerializeField] AudioSource swordAudio;
 
-    void FixedUpdate()
+    void Update()
     {
         bool sliceHit = Physics.Linecast(startSlicePoint.position, endSlicePoint.position, out RaycastHit hit, sliceableLayer);
 

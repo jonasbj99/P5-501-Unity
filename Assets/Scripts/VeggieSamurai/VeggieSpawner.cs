@@ -9,7 +9,7 @@ public class VeggieSpawner : MonoBehaviour
 {
     private Collider spawnArea;
 
-    [SerializeField] GameObject[] fruitPrefabs;
+    [SerializeField] GameObject[] veggiePrefabs;
 
     [SerializeField] float startDelay = 5f;
 
@@ -47,7 +47,7 @@ public class VeggieSpawner : MonoBehaviour
 
         while (enabled)
         {
-            GameObject prefab = fruitPrefabs[Random.Range(0, fruitPrefabs.Length)];
+            GameObject prefab = veggiePrefabs[Random.Range(0, veggiePrefabs.Length)];
 
             Vector3 position = new Vector3();
             position.x = Random.Range(spawnArea.bounds.min.x, spawnArea.bounds.max.x);
