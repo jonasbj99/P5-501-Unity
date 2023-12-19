@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EzySlice;
 
-// Tutorial used: https://youtu.be/GQzW6ZJFQ94
+// Inspired by tutorial made by Valem Tutorials (2023): https://youtu.be/GQzW6ZJFQ94
 
 public class SliceObject : MonoBehaviour
 {

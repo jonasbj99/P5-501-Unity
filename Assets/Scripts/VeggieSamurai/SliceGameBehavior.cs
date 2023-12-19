@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.InputSystem; // Debug Use
 
 public class SliceGameBehavior : MonoBehaviour
 {
@@ -13,23 +12,6 @@ public class SliceGameBehavior : MonoBehaviour
     float currentTime = 180f;
 
     [SerializeField] GameObject[] spawners;
-
-    //XRIDefaultInputActions debugControls; // Debug Use
-
-    /*
-    private void Awake() // Debug Use
-    {
-        debugControls = new XRIDefaultInputActions();
-    }
-    private void OnEnable() // Debug Use
-    {
-        debugControls.Enable();
-    }
-    private void OnDisable() // Debug Use
-    {
-        debugControls.Disable();
-    }
-    */
 
     private void Start()
     {

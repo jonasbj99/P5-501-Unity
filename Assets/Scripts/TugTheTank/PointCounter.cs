@@ -16,7 +16,7 @@ public class PointCounter : MonoBehaviour
 
     bool gameEnded = false;
 
-    void start()
+    void Start()
     {
         startTimer = false;
     }

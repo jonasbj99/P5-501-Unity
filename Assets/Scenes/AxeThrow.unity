@@ -21229,112 +21229,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 862092527}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &863051940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 863051944}
-  - component: {fileID: 863051943}
-  - component: {fileID: 863051942}
-  - component: {fileID: 863051941}
-  m_Layer: 0
-  m_Name: Wall
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!64 &863051941
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863051940}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &863051942
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863051940}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7c06b0c38ff9a8848b32922bfe4f2daa, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &863051943
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863051940}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &863051944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863051940}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.5, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &867898386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27912,8 +27806,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128263476}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.53953195, z: -0, w: 0.8419652}
-  m_LocalPosition: {x: 27.21392, y: -0.06978989, z: 22.038376}
+  m_LocalRotation: {x: -0, y: -0.057847105, z: -0, w: 0.99832547}
+  m_LocalPosition: {x: 240.01414, y: -25.36979, z: -4.001999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28006,7 +27900,7 @@ Transform:
   - {fileID: 158903172}
   - {fileID: 1867852765}
   - {fileID: 1623673897}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1226457531}
   m_LocalEulerAnglesHint: {x: 0, y: -65.304, z: 0}
 --- !u!4 &1129117364 stripped
 Transform:
@@ -30406,6 +30300,7 @@ Transform:
   - {fileID: 1848288877}
   - {fileID: 859181616}
   - {fileID: 919077063}
+  - {fileID: 1128263477}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -58.671, z: 0}
 --- !u!1001 &1234162370
@@ -52668,19 +52563,17 @@ SceneRoots:
   - {fileID: 426175015}
   - {fileID: 1643663003}
   - {fileID: 751424611}
-  - {fileID: 863051944}
   - {fileID: 6178122739830755480}
-  - {fileID: 501941361}
-  - {fileID: 560760002}
-  - {fileID: 1612037177}
   - {fileID: 233232223}
   - {fileID: 1060711284}
+  - {fileID: 560760002}
+  - {fileID: 501941361}
+  - {fileID: 1612037177}
   - {fileID: 1226457531}
-  - {fileID: 1128263477}
   - {fileID: 363135180}
   - {fileID: 1317339844}
   - {fileID: 1597415035}
-  - {fileID: 559275493}
   - {fileID: 1046499844}
+  - {fileID: 559275493}
   - {fileID: 1889093971}
   - {fileID: 1923982690}

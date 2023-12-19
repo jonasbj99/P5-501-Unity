@@ -69,29 +69,11 @@ public class AxeGameBehavior : MonoBehaviour
 
         scoreText.text = "Score: " + axeScore;
         timeText.text = "Time: " + currentTime.ToString("0");
-
-        /*
-        if (Input.GetKeyDown("space"))
-        {
-            SpawnTarget();
-        }
-
-        if (Input.GetKeyDown("1"))
-        {
-            SpawnAxe(throwingAxe1, axeSpawn1);
-        }
-
-        if (Input.GetKeyDown("2"))
-        {
-            SpawnAxe(throwingAxe2, axeSpawn2);
-        }
-        */
     }
 
     void SpawnTarget()
     {
-        Vector3 randomSpawnPos = spawnArea.transform.position +
-            new Vector3(Random.Range(-spawnX, spawnX), Random.Range(-spawnY, spawnY), Random.Range(-spawnZ, spawnZ));
+        Vector3 randomSpawnPos = spawnArea.transform.position + new Vector3(Random.Range(-spawnX, spawnX), Random.Range(-spawnY, spawnY), Random.Range(-spawnZ, spawnZ));
         Instantiate(targetObject[Random.Range(0, targetObject.Length)], randomSpawnPos, spawnArea.transform.rotation);
     }
 

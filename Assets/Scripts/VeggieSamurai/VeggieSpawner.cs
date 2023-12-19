@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-// Tutorial used: https://youtu.be/xTT1Ae_ifhM
+// Inspired by tutorial made by Zigurous (2022): https://youtu.be/xTT1Ae_ifhM
 
 public class VeggieSpawner : MonoBehaviour
 {

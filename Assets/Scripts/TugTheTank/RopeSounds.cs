@@ -9,7 +9,6 @@ public class RopeSounds : MonoBehaviour
     public AudioClip windAudio;
     public AudioClip grabAudio;
 
-    // Start is called before the first frame update
     void Start()
     {
         bgAudio = GetComponent<AudioSource>();
@@ -23,7 +22,6 @@ public class RopeSounds : MonoBehaviour
         bgAudio.Play();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
