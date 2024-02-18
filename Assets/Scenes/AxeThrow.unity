@@ -5287,6 +5287,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -8.435
       objectReference: {fileID: 0}
+    - target: {fileID: 64793317159988468, guid: caa7d51e47efdfb439320af38b406506,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

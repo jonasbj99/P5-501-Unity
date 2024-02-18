@@ -6,9 +6,30 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
+    XRIDefaultInputActions.DebugActions inputActions;
+
+    void Awake()
+    {
+        inputActions = new XRIDefaultInputActions.DebugActions();
+    }
+
+    private void OnEnable()
+    {
+        inputActions.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Disable();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        if (inputActions.SpawnObject.ReadValue<float>() > 0)
         {
             SceneManager.LoadScene("MainMenu");
         }
@@ -21,7 +42,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void TugTankButton()
     {
-        SceneManager.LoadScene("TovTræk");
+        SceneManager.LoadScene("TugTheTank");
     }
 
     public void IceClimbButton()
@@ -31,6 +52,6 @@ public class MainMenuScript : MonoBehaviour
 
     public void VeggieSamuButton()
     {
-        SceneManager.LoadScene("FruitNinja");
+        SceneManager.LoadScene("VeggieSamurai");
     }
 }

@@ -2629,12 +2629,12 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             ""actions"": [
                 {
                     ""name"": ""SpawnObject"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""5efdf7c9-7d23-4d27-bc52-765115a9d61c"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
