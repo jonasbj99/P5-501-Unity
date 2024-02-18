@@ -29,10 +29,6 @@ public class MainMenuScript : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenu");
         }
-        if (inputActions.SpawnObject.ReadValue<float>() > 0)
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
     }
 
     public void AxeThrowButton()
